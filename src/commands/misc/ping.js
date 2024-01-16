@@ -2,7 +2,7 @@ const { Client, Interaction } = require("discord.js")
 
 module.exports = {
     name: 'ping',
-    description: 'Pong!',
+    description: 'Replies with the bot ping',
     // devOnly: Boolean,
     // testOnly: Boolean,
     // options: Object[],
@@ -15,7 +15,13 @@ module.exports = {
      * @param {Client} client 
      * @param {Interaction} interaction 
      */
-    callback: (client, interaction) => {
-        interaction.reply(`Pong! ${client.ws.ping}ms`)
+    callback: async (client, interaction) => {
+        const message = await interaction.deferReply({
+            fetchReply: true
+        });
+
+        const ping = message.createdTimestamp - interaction.createdTimestamp;
+
+        interaction.editReply(`Pong! api latency: ${client.ws.ping}ms | client ping: ${ping}ms`)
     }
 }

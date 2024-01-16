@@ -29,7 +29,19 @@ let stati = [
         'name': 'Bipole IV: Liberation of Xuir',
     },
     {
-        'name': 'Bipole III',
+        'name': 'SLAY YOURSELF',
+    },
+    {
+        'name': 'Bipole R-XV',
+    },
+    {
+        'name': 'Bipole I',
+    },
+    {
+        'name': 'z?game',
+    },
+    {
+        'name': 'q?battle',
     },
     {
         'name': 'Mana Cycle OST',
@@ -48,13 +60,89 @@ let stati = [
         'type': ActivityType.Watching
     },
     {
+        'name': 'lemniscate lore videos',
+        'type': ActivityType.Watching
+    },
+    {
         'name': 'Mana Cycle',
         'type': ActivityType.Competing
     },
     {
         'name': 'Uninstallng everything but Bipole',
         'type': ActivityType.Custom
-    }
+    },
+    {
+        'name': 'Fighting level 10 Trainbots',
+        'type': ActivityType.Custom
+    },
+    {
+        'name': 'Nerfing Infinity',
+        'type': ActivityType.Custom
+    },
+    {
+        'name': 'Buffing z?man',
+        'type': ActivityType.Custom
+    },
+    {
+        'name': 'Slaying themself',
+        'type': ActivityType.Custom
+    },
+    {
+        'name': 'Searching for the Itucher',
+        'type': ActivityType.Custom
+    },
+    {
+        'name': 'Fighting Dark Infinity',
+        'type': ActivityType.Custom
+    },
+    {
+        'name': 'Committing Cuban missile crisis',
+        'type': ActivityType.Custom
+    },
+    {
+        'name': 'cascading they mana',
+        'type': ActivityType.Custom
+    },
+    {
+        'name': 'spellcasting',
+        'type': ActivityType.Custom
+    },
+    {
+        'name': 'shadow wizard mana gang',
+        'type': ActivityType.Custom
+    },
+    {
+        'name': 'consuming oatmeal',
+        'type': ActivityType.Custom
+    },
+    {
+        'name': 'Travellng across Bipole',
+        'type': ActivityType.Custom
+    },
+    {
+        'name': 'Eating electric chicken',
+        'type': ActivityType.Custom
+    },
+    {
+        'name': 'Liberating Xuir',
+        'type': ActivityType.Custom
+    },
+    {
+        'name': 'Neville did it',
+        'type': ActivityType.Custom
+    },
+    {
+        'name': 'Doing Notre Dame',
+        'type': ActivityType.Custom
+    },
+    {
+        'name': 'Worshipping Bob Ross',
+        'type': ActivityType.Custom
+    },
+    {
+        'name': 'Browsing infinityjka.itch.io',
+        'type': ActivityType.Custom
+    },
 ]
 
 function changeStatus(client) {

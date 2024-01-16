@@ -1,33 +1,25 @@
 const path = require('path');
 const getAllFiles = require("./getAllFiles");
 
-/**
- * 
- * @param {string[]} exceptions commands to exclude
- * @returns 
- */
-module.exports = (exceptions = []) => {
-    let localCommands = [];
 
-    const commandCategories = getAllFiles(
-        path.join(__dirname, '..', 'commands'),
-        true
-    )
+let localCommands = [];
 
-    for (const commandCategory of commandCategories) {
-        const commandFiles = getAllFiles(commandCategory);
+const commandCategories = getAllFiles(
+    path.join(__dirname, '..', 'commands'),
+    true
+)
 
-        for (const commandFile of commandFiles) {
-            const commandObject = require(commandFile);
+for (const commandCategory of commandCategories) {
+    const commandFiles = getAllFiles(commandCategory);
 
-            if (exceptions.includes(commandObject.name)) {
-                continue;
-            }
+    for (const commandFile of commandFiles) {
+        const commandObject = require(commandFile);
 
-            console.log
-            localCommands.push(commandObject);
-        }
+        console.log
+        localCommands.push(commandObject);
     }
+}
 
+module.exports = () => {
     return localCommands;
 }
